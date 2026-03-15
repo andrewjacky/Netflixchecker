@@ -47,7 +47,7 @@ valid_accounts = 0
 async def check_netflix_id(netflix_id, email):
     """Check if Netflix ID is valid by calling the API"""
     try:
-        url = f"{API_URL}/api/gen"
+        url = API_URL
         data = {
             "netflix_id": netflix_id,
             "secret_key": SECRET_KEY
